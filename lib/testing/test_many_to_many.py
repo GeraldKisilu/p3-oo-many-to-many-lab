@@ -16,13 +16,14 @@ def test_contract_init():
     book = Book("Title")
     author = Author("Name")
     date = '01/01/2001'
-    royalties = 40000
+    royalties = 40  
     contract = Contract(author, book, date, royalties)
 
     assert contract.author == author
     assert contract.book == book
     assert contract.date == date
     assert contract.royalties == royalties
+
 
 def test_contract_validates_author():
     """Test Contract class validates author of type Author"""
